@@ -1,0 +1,195 @@
+body > #home {
+  header {
+    background: url('../images/bg-banner.png') repeat-x top center #dcdcdc;
+    border-bottom: 6px solid $blue;
+    height: 326px;
+    text-align: center;
+  }
+
+  #main-content {
+    margin: auto;
+    width: 1200px;
+  }
+
+  #social {
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 0 5px transparentize(black, 0.7);
+    overflow: hidden;
+    position: relative;
+    transform: translateY(-83px);
+    min-width: 280px;
+    z-index: 1;
+
+    h1 {
+      background: $blue;
+      border-bottom: 1px solid darken($blue, 5%);
+      color: white;
+      font-size: 1.3em;
+      line-height: 80px;
+      margin: 0;
+      text-align: center;
+      text-shadow: 0 1px 2px transparentize(black, 0.6);
+    }
+
+    .content {padding: 28px 24px;}
+
+    .discord {
+      background: url('../images/ico-discord.svg') 14px center no-repeat #7289da;
+      background-size: 13%;
+      border-bottom: 1px solid darken(#7289da, 5%);
+      border-radius: 2px;
+      color: white;
+      display: block;
+      font-weight: 600;
+      padding: 16px 0;
+      text-align: center;
+      text-decoration: none;
+      text-indent: 30px;
+      transition: .2s;
+
+      &:hover {background-color: darken(#7289da, 5%);}
+    }
+
+    hr {
+      border-top-color: transparentize($blue, .75);
+      margin: 28px 0;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0 0 0 15px;
+      padding: 0;
+
+      li {margin-bottom: 15px;}
+
+      a {
+        background: left center no-repeat;
+        color: $text;
+        font-size: .95em;
+        padding: 5px 0 5px 35px;
+        text-decoration: none;
+        transition: .2s;
+
+        &:hover {
+          color: $blue;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .twitter {background-image: url('../images/ico-twitter.svg');}
+    .facebook {
+      background-image: url('../images/ico-facebook.svg');
+      background-position: 6px center;
+      background-size: auto 20px;
+    }
+    .youtube {
+      background-image: url('../images/ico-youtube.svg');
+      background-position: 2px center;
+      background-size: 20px;
+    }
+  }
+
+  #presentation {
+    flex-grow: 1;
+    margin: 16px 0 0 80px;
+
+    h1 {
+      font-size: 1.5em;
+      margin-bottom: 21px;
+    }
+
+    img {
+      border: 12px solid white;
+      border-radius: 2px;
+      box-shadow: 0 0 5px transparentize(black, 0.7);
+      box-sizing: content-box;
+      height: 20%;
+      margin-right: 24px;
+      width: 20%;
+    }
+
+    p {
+      font-size: 1.05em;
+
+      &:first-child {margin-top: 0;}
+    }
+  }
+
+  #video {
+    border-bottom: 3px dashed $blue;
+    margin-bottom: 90px;
+    padding-bottom: 120px;
+  }
+
+  iframe {
+    border: 12px solid white;
+    border-radius: 2px;
+    box-shadow: 0 0 5px transparentize(black, 0.7);
+    display: block;
+    margin: 50px auto;
+  }
+
+  #project {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  section {
+    margin-top: 120px;
+
+    h2 {
+      background: $red;
+      border-radius: 2px;
+      border-bottom: 1px solid darken($red, 5%);
+      box-shadow: 0 0 5px transparentize(black, 0.7);
+      color: white;
+      font-size: 1.4em;
+      height: 100px;
+      margin: 0 0 -30px;
+      padding: 24px 32px;
+      text-align: center;
+      text-shadow: 0 1px 2px transparentize(black, 0.6);
+      text-transform: uppercase;
+    }
+
+    &:nth-child(even) h2 {
+      background: $blue;
+      border-bottom: 1px solid darken($blue, 5%);
+    }
+
+    div {
+      flex-wrap: wrap;
+
+      a {
+        background: white;
+        border-radius: 2px;
+        box-shadow: 0 0 5px transparentize(black, 0.7);
+        color: $text;
+        display: block;
+        margin: 0 20px 40px;
+        padding: 20px 16px;
+        transition: .2s;
+        width: calc(100% / 3 - 40px);
+
+        &:hover {
+          box-shadow: 0 3px 5px transparentize(black, 0.7);
+          color: $blue;
+          text-decoration: none;
+        }
+
+        h3 {
+          font-size: 1em;
+          font-weight: 400;
+          margin-top: 0;
+        }
+
+        img {width: 100%;}
+      }
+    }
+
+    p {margin-top: 60px;}
+  }
+}
+

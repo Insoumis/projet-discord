@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="204px" viewBox="0 0 106 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico-facebook" transform="translate(-147.000000, -98.000000)">
+            <rect id="Rectangle" x="0" y="0" width="400" height="400"></rect>
+            <path d="M215.724094,301.881821 L215.724094,208.881444 L246.939785,208.881444 L251.613892,172.637548 L215.724094,172.637548 L215.724094,149.498109 C215.724094,139.004665 218.637956,131.853729 233.6853,131.853729 L252.877466,131.845342 L252.877466,99.4285099 C249.558254,98.986818 238.165585,98 224.9111,98 C197.240126,98 178.295829,114.890523 178.295829,145.908664 L178.295829,172.637548 L147,172.637548 L147,208.881444 L178.295829,208.881444 L178.295829,301.881821 L215.724094,301.881821 Z" id="f" fill="#3C5A99" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,600');
+
+@import 'modules/colors';
+
+@import 'partials/reset';
+
+@import 'partials/nav';
+@import 'partials/home';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus {outline: 0;}
+
+body {
+  background: $background;
+  color: $text;
+  font-family: 'PT Sans', sans-serif;
+  padding-bottom: 200px;
+}
+
+h1, h2, h3, h4 {
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {text-decoration: underline;}
+}
+
+.flex {display: flex;}
+.blue {color: $blue;}
+.red {color: $red;}
