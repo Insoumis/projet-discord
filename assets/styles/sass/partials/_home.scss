@@ -9,6 +9,8 @@ body > #home {
   #main-content {
     margin: auto;
     width: 1200px;
+
+    > div {align-items: flex-start;}
   }
 
   #social {

@@ -662,6 +662,8 @@ body > #home header {
 body > #home #main-content {
   margin: auto;
   width: 1200px; }
+  body > #home #main-content > div {
+    align-items: flex-start; }
 
 body > #home #social {
   background: white;
