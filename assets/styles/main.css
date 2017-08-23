@@ -723,7 +723,7 @@ body > #home #social {
         padding: 16px 14px; } }
   body > #home #social .discord {
     background: url("../images/ico-discord.svg") 14px center no-repeat #7289da;
-    background-size: 13%;
+    background-size: auto 30px;
     border-bottom: 1px solid #5e78d5;
     border-radius: 2px;
     color: white;
@@ -737,7 +737,7 @@ body > #home #social {
     @media (max-width: 1023px) {
       body > #home #social .discord {
         background-position: 10px center;
-        background-size: 10%;
+        background-size: auto 22px;
         font-size: 0.8em;
         padding: 12px 0;
         text-indent: 14px; } }
