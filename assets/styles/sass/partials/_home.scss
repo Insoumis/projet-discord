@@ -14,8 +14,13 @@ body > #home {
 
     @media (max-width: 1229px) {width: 1024px;}
     @media (max-width: 1023px) {width: 768px;}
+    @media (max-width: 767px) {width: 100%;}
 
-    > div {align-items: flex-start;}
+    > div {
+      align-items: flex-start;
+
+      @media (max-width: 767px) {flex-wrap: wrap;}
+    }
   }
 
   #social {
@@ -31,6 +36,12 @@ body > #home {
     @media (max-width: 1023px) {
       min-width: 220px;
       transform: translateY(-63px);
+    }
+
+    @media (max-width: 767px) {
+      margin: 20px 0 10px;
+      transform: translateY(0);
+      width: 100%;
     }
 
     h1 {
@@ -128,6 +139,8 @@ body > #home {
 
     @media (max-width: 1023px) {margin: 10px 0 0 30px;}
 
+    @media (max-width: 767px) {margin: 10px;}
+
     h1 {
       font-size: 1.5em;
       margin-bottom: 21px;
@@ -163,14 +176,21 @@ body > #home {
   }
 
   #video {
-    border-bottom: 3px dashed $blue;
-    margin-bottom: 90px;
+    border-bottom: 2px dashed $blue;
+    margin-bottom: 80px;
     padding-bottom: 120px;
+
+    @media (max-width: 1229px) {
+      margin-bottom: 80px;
+      padding-bottom: 100px;
+    }
 
     @media (max-width: 1023px) {
       margin-bottom: 60px;
-      padding-bottom: 70px;
+      padding-bottom: 60px;
     }
+
+    @media (max-width: 767px) {margin-bottom: 20px;}
   }
 
   iframe {
@@ -180,25 +200,36 @@ body > #home {
     display: block;
     height: 480px;
     margin: 50px auto;
+    max-width: 100%;
     width: 860px;
 
     @media (max-width: 1023px) {
       height: 335px;
       width: 600px;
     }
+
+    @media (max-width: 767px) {
+      border-width: 6px;
+      height: 178px;
+      margin: 10px auto;
+      width: 320px;
+    }
   }
 
   #project {
-    font-size: 38px;
     text-align: center;
 
     @media (max-width: 1023px) {font-size: 28px;}
+
+    @media (max-width: 767px) {font-size: 21px;}
   }
 
   section {
-    margin-top: 120px;
+    margin-top: 110px;
 
+    @media (max-width: 1229px) {margin-top: 90px;}
     @media (max-width: 1023px) {margin-top: 80px;}
+    @media (max-width: 767px) {margin-top: 40px;}
 
     h2 {
       background: $red;
@@ -215,6 +246,11 @@ body > #home {
       text-transform: uppercase;
 
       @media (max-width: 1023px) {font-size: 1.2em;}
+
+      @media (max-width: 767px) {
+        font-size: .9em;
+        margin-bottom: -40px;
+      }
     }
 
     &:nth-child(even) h2 {
@@ -237,6 +273,10 @@ body > #home {
         width: calc(100% / 3 - 40px);
 
         @media (max-width: 1023px) {width: calc(100% / 2 - 40px);}
+        @media (max-width: 767px) {
+          margin: 0 5px 30px;
+          width: 100%;
+        }
 
         &:hover {
           box-shadow: 0 3px 5px transparentize(black, 0.7);
@@ -248,6 +288,8 @@ body > #home {
           font-size: 1em;
           font-weight: 400;
           margin-top: 0;
+
+          @media (max-width: 767px) {font-size: .8em;}
         }
 
         img {width: 100%;}

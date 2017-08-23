@@ -27,6 +27,8 @@
     margin-left: 40px;
     padding: 0;
 
+    @media (max-width: 767px) {display: none;}
+
     a {
       color: #fff;
       display: block;
